@@ -1,4 +1,4 @@
-[![codecov](https://codecov.io/gh/miguelfranken/carbon-contract/branch/main/graph/badge.svg?token=RRX86L2MKF)](https://codecov.io/gh/carbon-xyz/carbon-contract)
+[![codecov](https://codecov.io/gh/MiguelFranken/carbon-contract/branch/master/graph/badge.svg?token=FOfAu7iFyx)](https://codecov.io/gh/MiguelFranken/carbon-contract)
 
 # Carbon
 
