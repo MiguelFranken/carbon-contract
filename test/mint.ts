@@ -110,9 +110,7 @@ describe("Mint", function () {
           .withArgs(`${lengths[i - 1]}_${i}.json`, BigNumber.from(i));
       }
 
-      expect(await contracts.carbon.totalSupply()).to.equal(
-        INIT_MINT_COUNT
-      );
+      expect(await contracts.carbon.totalSupply()).to.equal(INIT_MINT_COUNT);
     });
 
     it("should not to be possible to execute initial mint more than once", async () => {
@@ -378,9 +376,7 @@ describe("Mint", function () {
           .withArgs(`${lengths[i - 1]}_${i}.json`, BigNumber.from(i));
       }
 
-      expect(await contracts.carbon.totalSupply()).to.equal(
-        INIT_MINT_COUNT
-      );
+      expect(await contracts.carbon.totalSupply()).to.equal(INIT_MINT_COUNT);
 
       const numberTokens = 100;
 

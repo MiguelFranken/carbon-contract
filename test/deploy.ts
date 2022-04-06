@@ -26,10 +26,7 @@ export async function deployContracts(signer: Signer) {
   const orderStatisticsTreeLib = await OrderStatisticsTreeLib.deploy();
   await orderStatisticsTreeLib.deployed();
 
-  const CarbonLib = await ethers.getContractFactory(
-    "CarbonLib",
-    signer
-  );
+  const CarbonLib = await ethers.getContractFactory("CarbonLib", signer);
   const carbonLib = await CarbonLib.deploy();
   await carbonLib.deployed();
 

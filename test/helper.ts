@@ -8,10 +8,7 @@ import { PercentileDataEntry } from "./percentiles";
 /**
  * Sets contract to free sale settings
  */
-export async function setContractToFreeSale(
-  contract: Carbon,
-  owner: Signer
-) {
+export async function setContractToFreeSale(contract: Carbon, owner: Signer) {
   await contract.connect(owner).changePublicSaleStatus(true);
   await contract.connect(owner).changeFeeSettings(true, 0, 0);
   const settings = await contract.set();
@@ -46,10 +43,7 @@ export async function setContractToPrivateSale(
 /**
  * Sets contract to public sale settings
  */
-export async function setContractToPublicSale(
-  contract: Carbon,
-  owner: Signer
-) {
+export async function setContractToPublicSale(contract: Carbon, owner: Signer) {
   await contract.connect(owner).changePublicSaleStatus(true);
   await contract
     .connect(owner)

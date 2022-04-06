@@ -18,9 +18,8 @@ describe("Settings", function () {
   });
 
   it("should be possible to change PublicSalesStatus by owner only", async () => {
-    await expect(
-      contracts.carbon.connect(owner).changePublicSaleStatus(false)
-    ).to.not.be.reverted;
+    await expect(contracts.carbon.connect(owner).changePublicSaleStatus(false))
+      .to.not.be.reverted;
 
     await expect(
       contracts.carbon.connect(nonOwner).changePublicSaleStatus(false)

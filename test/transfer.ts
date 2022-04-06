@@ -45,11 +45,7 @@ describe("Transfers", function () {
 
   describe("Split Sent Ether", function () {
     it("should collect 50% of sent ether for the team", async () => {
-      await assertCollectedBalance(
-        contracts.carbon,
-        BigNumber.from(0),
-        "team"
-      );
+      await assertCollectedBalance(contracts.carbon, BigNumber.from(0), "team");
 
       // mint
       const minter = signer1;
@@ -64,11 +60,7 @@ describe("Transfers", function () {
     });
 
     it("should collect 30% of sent ether for donation", async () => {
-      await assertCollectedBalance(
-        contracts.carbon,
-        BigNumber.from(0),
-        "team"
-      );
+      await assertCollectedBalance(contracts.carbon, BigNumber.from(0), "team");
 
       // mint
       const minter = signer1;
