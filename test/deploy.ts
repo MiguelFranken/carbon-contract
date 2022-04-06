@@ -44,7 +44,7 @@ export async function deployContracts(signer: Signer) {
     ? "0x0A78bB5c3F3Bf99f78c2D440f2C10712Ce413109"
     : orderStatisticsTreeLib.address;
 
-  // deploy crypto cocks contract
+  // deploy carbon contract
   const Carbon = await ethers.getContractFactory("Carbon", {
     libraries: {
       OrderStatisticsTreeLib: orderStatisticsTreeLibAddress,

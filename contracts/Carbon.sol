@@ -94,7 +94,7 @@ contract Carbon is ERC721("Carbon", "CC"), ERC721URIStorage, Ownable {
     /**
      * - Mints new NFT.
      * - Stores balance in tree.
-     * - Calculates cock length.
+     * - Calculates token length.
      * - Constructs token.
      * - Transfers collected revenue every 50th mint.
      */

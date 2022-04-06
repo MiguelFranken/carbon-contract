@@ -283,12 +283,12 @@ export async function mintRevert(
 }
 
 /**
- * Assert cock length and token id by looking at the
+ * Assert token length and token id by looking at the
  * emitted PermanentURI.
  *
  * @param carbon Deployed Carbon contract
  * @param mintTx Mint transaction
- * @param length Expected cock length
+ * @param length Expected token length
  * @param tokenId Expected token id
  */
 export async function expectToken(

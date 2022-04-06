@@ -36,7 +36,7 @@ async function main() {
     carbonWhitelistingLib.address
   );
 
-  // deploy crypto cocks contract
+  // deploy carbon contract
   const Carbon = await ethers.getContractFactory("Carbon", {
     libraries: {
       OrderStatisticsTreeLib: orderStatisticsTreeLib.address,
